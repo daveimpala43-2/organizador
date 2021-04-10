@@ -23,7 +23,7 @@ export function RouterNavigation() {
 
 
     function RenderNavigation(){
-        return state.user ? (
+        return state.user === undefined ? (
             <MainRouter.Screen name={"AutnStack"} component={AuthStack} />
         ) : (
             <MainRouter.Screen name={"HomeStack"} component={HomeStack} />

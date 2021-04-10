@@ -54,6 +54,7 @@ export default function index() {
         if(userData.email && userData.password){
             signInUser(userData).then(response =>{
                 if(response.status === 200){
+                    console.log("yei")
                     login(response.data)
                 }else if(response.status === 404){
                     setAccountError('No pudimos encontrar una cuenta asociada con ese correo y/o contraseña');
