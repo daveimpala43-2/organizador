@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 
 //model
-const userModel = require('../db/models/userModel');
+const userModel = require('../../db/models/userModel');
 
 const AuthController = {};
 
